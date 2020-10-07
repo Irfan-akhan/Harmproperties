@@ -37,6 +37,17 @@ a {
         color: #fff;
     }
 }
+.btn-explore {
+    border: 1px solid #eb5a3f;
+    padding: 2rem 3.5rem;
+    background-color: #eb5a3f;
+    color: #fff;
+    font-weight: bolder;
+    &:hover {
+        color: #eb5a3f;
+        background-color: #fff;
+    }
+}
 .btn-login {
     color: #fff;
     border: 1px solid #eb5a3f;
@@ -61,8 +72,10 @@ a {
         border-color: #649b30;
     }
 }
+section {
+    padding: 6rem;
+}
 header {
-    width: 100vw;
     height: 95vh;
     margin: 0 auto;
     background: linear-gradient(to bottom, #000000a8, #32333331),
@@ -119,7 +132,6 @@ header {
     }
 }
 section#info {
-    padding: 3rem 1rem;
     width: 85vw;
     margin: 0 auto;
     display: flex;
@@ -170,7 +182,6 @@ section#info {
     }
 }
 section#how-it-works {
-    padding: 6rem;
     background-color: #bbbbbb17;
     div.container {
         display: flex;
@@ -212,6 +223,62 @@ section#how-it-works {
             img {
                 height: 100px;
                 width: 120px;
+            }
+        }
+    }
+}
+section#featured {
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+        font-size: 3rem;
+        text-transform: capitalize;
+        &::after {
+            content: ' ';
+            display: block;
+            width: 10%;
+            height: 0.3rem;
+            margin: 1rem auto;
+            background-color: #eb5a3f;
+        }
+    }
+    div.listing {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        div.house {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: start;
+            padding: 2rem;
+            width: 21%;
+            background: linear-gradient(to top, rgba(34, 34, 34, 0.705), #0000000e),
+                url(../../../main-bg.png) no-repeat center;
+            height: 450px;
+            border-radius: 5px;
+            margin: 2rem 1px;
+            cursor: pointer;
+            h2 {
+                font-size: 1.6rem;
+                color: #fff;
+                margin-bottom: 1rem;
+                span {
+                    font-size: 2rem;
+                }
+            }
+            a {
+                font-weight: bolder;
+                color: red;
+                &:hover {
+                    font-weight: bolder;
+                }
+            }
+            &:hover {
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.637), #00000098),
+                    url(../../../main-bg.png) no-repeat center;
             }
         }
     }

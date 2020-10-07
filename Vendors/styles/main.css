@@ -43,6 +43,19 @@ a:hover {
   color: #fff;
 }
 
+.btn-explore {
+  border: 1px solid #eb5a3f;
+  padding: 2rem 3.5rem;
+  background-color: #eb5a3f;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.btn-explore:hover {
+  color: #eb5a3f;
+  background-color: #fff;
+}
+
 .btn-login {
   color: #fff;
   border: 1px solid #eb5a3f;
@@ -71,8 +84,11 @@ a:hover {
   border-color: #649b30;
 }
 
+section {
+  padding: 6rem;
+}
+
 header {
-  width: 100vw;
   height: 95vh;
   margin: 0 auto;
   background: -webkit-gradient(linear, left top, left bottom, from(#000000a8), to(#32333331)), url(../../../main-bg2.jpg) no-repeat bottom;
@@ -145,7 +161,6 @@ header div.heading form input {
 }
 
 section#info {
-  padding: 3rem 1rem;
   width: 85vw;
   margin: 0 auto;
   display: -webkit-box;
@@ -226,7 +241,6 @@ section#info div div.detail p {
 }
 
 section#how-it-works {
-  padding: 6rem;
   background-color: #bbbbbb17;
 }
 
@@ -284,5 +298,85 @@ section#how-it-works div.detail h2 {
 section#how-it-works div.detail img {
   height: 100px;
   width: 120px;
+}
+
+section#featured {
+  margin: 0 auto;
+  text-align: center;
+}
+
+section#featured h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+section#featured h1::after {
+  content: ' ';
+  display: block;
+  width: 10%;
+  height: 0.3rem;
+  margin: 1rem auto;
+  background-color: #eb5a3f;
+}
+
+section#featured div.listing {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#featured div.listing div.house {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: start;
+  padding: 2rem;
+  width: 21%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(34, 34, 34, 0.705)), to(#0000000e)), url(../../../main-bg.png) no-repeat center;
+  background: linear-gradient(to top, rgba(34, 34, 34, 0.705), #0000000e), url(../../../main-bg.png) no-repeat center;
+  height: 450px;
+  border-radius: 5px;
+  margin: 2rem 1px;
+  cursor: pointer;
+}
+
+section#featured div.listing div.house h2 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+section#featured div.listing div.house h2 span {
+  font-size: 2rem;
+}
+
+section#featured div.listing div.house a {
+  font-weight: bolder;
+  color: red;
+}
+
+section#featured div.listing div.house a:hover {
+  font-weight: bolder;
+}
+
+section#featured div.listing div.house:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.637)), to(#00000098)), url(../../../main-bg.png) no-repeat center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.637), #00000098), url(../../../main-bg.png) no-repeat center;
 }
 /*# sourceMappingURL=main.css.map */
