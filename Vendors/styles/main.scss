@@ -14,10 +14,10 @@ a {
     text-decoration: none;
     color: #fff;
     font-size: 1.3rem;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
     &:hover {
-        background-color: #000;
-        color: #fff;
+        border-bottom: 3px solid #fff;
         border-radius: 10px;
     }
 }
@@ -35,6 +35,7 @@ a {
     &:hover {
         background-color: #eb5a3f;
         color: #fff;
+        border-bottom: 3px solid transparent;
     }
 }
 .btn-explore {
@@ -46,6 +47,7 @@ a {
     &:hover {
         color: #eb5a3f;
         background-color: #fff;
+        border: 1px solid #eb5a3f;
     }
 }
 .btn-login {
@@ -86,7 +88,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        font-weight: 400;
         .logo {
             font-size: 1.7rem;
             margin: 0 3rem;
@@ -100,7 +102,7 @@ header {
         transform: translate(-50%, -50%);
         color: #fff;
         h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 200;
             padding: 2rem auto;
             text-transform: capitalize;
@@ -109,7 +111,7 @@ header {
             }
         }
         p {
-            margin: 1rem auto;
+            margin: 2rem auto;
             font-size: 1.1rem;
             font-weight: 100;
         }
@@ -269,16 +271,37 @@ section#featured {
                     font-size: 2rem;
                 }
             }
-            a {
-                font-weight: bolder;
-                color: red;
-                &:hover {
-                    font-weight: bolder;
-                }
-            }
+
             &:hover {
                 background: linear-gradient(to top, rgba(0, 0, 0, 0.637), #00000098),
                     url(../../../main-bg.png) no-repeat center;
+            }
+        }
+    }
+}
+footer {
+    background-color: rgb(243, 243, 243);
+    padding: 6rem;
+    div#newsletter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            max-width: 40%;
+            color: gray;
+            span {
+                font-size: 2rem;
+                font-weight: bolder;
+            }
+        }
+        form {
+            input {
+                padding: 1rem;
+                border: none;
+                margin: 0px 2rem;
+                font-size: 1.2rem;
             }
         }
     }

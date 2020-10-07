@@ -16,12 +16,12 @@ a {
   text-decoration: none;
   color: #fff;
   font-size: 1.3rem;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
+  margin-right: 1rem;
 }
 
 a:hover {
-  background-color: #000;
-  color: #fff;
+  border-bottom: 3px solid #fff;
   border-radius: 10px;
 }
 
@@ -41,6 +41,7 @@ a:hover {
 .btn-app:hover {
   background-color: #eb5a3f;
   color: #fff;
+  border-bottom: 3px solid transparent;
 }
 
 .btn-explore {
@@ -54,6 +55,7 @@ a:hover {
 .btn-explore:hover {
   color: #eb5a3f;
   background-color: #fff;
+  border: 1px solid #eb5a3f;
 }
 
 .btn-login {
@@ -107,6 +109,7 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 400;
 }
 
 header nav .logo {
@@ -125,7 +128,7 @@ header div.heading {
 }
 
 header div.heading h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 200;
   padding: 2rem auto;
   text-transform: capitalize;
@@ -136,7 +139,7 @@ header div.heading h1 span {
 }
 
 header div.heading p {
-  margin: 1rem auto;
+  margin: 2rem auto;
   font-size: 1.1rem;
   font-weight: 100;
 }
@@ -366,17 +369,44 @@ section#featured div.listing div.house h2 span {
   font-size: 2rem;
 }
 
-section#featured div.listing div.house a {
-  font-weight: bolder;
-  color: red;
-}
-
-section#featured div.listing div.house a:hover {
-  font-weight: bolder;
-}
-
 section#featured div.listing div.house:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.637)), to(#00000098)), url(../../../main-bg.png) no-repeat center;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.637), #00000098), url(../../../main-bg.png) no-repeat center;
+}
+
+footer {
+  background-color: #f3f3f3;
+  padding: 6rem;
+}
+
+footer div#newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div#newsletter h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  max-width: 40%;
+  color: gray;
+}
+
+footer div#newsletter h2 span {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+footer div#newsletter form input {
+  padding: 1rem;
+  border: none;
+  margin: 0px 2rem;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=main.css.map */
