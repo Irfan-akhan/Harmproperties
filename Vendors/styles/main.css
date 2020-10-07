@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  font-weight: 100;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+}
+
+a:hover {
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.btn {
+  margin-right: 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.5rem 1.4rem;
+  cursor: pointer;
+}
+
+.btn-app {
+  color: #eb5a3f;
+  border: 1px solid #eb5a3f;
+}
+
+.btn-app:hover {
+  background-color: #eb5a3f;
+  color: #fff;
+}
+
+.btn-login {
+  color: #fff;
+  border: 1px solid #eb5a3f;
+  background-color: #eb5a3f;
+}
+
+.btn-login:hover {
+  background-color: #fff;
+  color: #eb5a3f;
+  border: 1px solid transparent;
+}
+
+.btn-search {
+  padding: 1rem 2rem;
+  margin-right: 0.5rem;
+  border-radius: 0.6rem;
+  border: none;
+  font-size: 1.2rem;
+  color: #fff;
+  border: 1px solid #8cdb42;
+  background-color: #8cdb42;
+}
+
+.btn-search:hover {
+  background-color: #649b30;
+  border-color: #649b30;
+}
+
+header {
+  width: 100vw;
+  height: 95vh;
+  margin: 0 auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000a8), to(#32333331)), url(../../../main-bg2.jpg) no-repeat bottom;
+  background: linear-gradient(to bottom, #000000a8, #32333331), url(../../../main-bg2.jpg) no-repeat bottom;
+  background-size: cover;
+}
+
+header nav {
+  padding-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .logo {
+  font-size: 1.7rem;
+  margin: 0 3rem;
+}
+
+header div.heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+header div.heading h1 {
+  font-size: 3rem;
+  font-weight: 200;
+  padding: 2rem auto;
+  text-transform: capitalize;
+}
+
+header div.heading h1 span {
+  text-transform: initial;
+}
+
+header div.heading p {
+  margin: 1rem auto;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+
+header div.heading form {
+  background-color: #24232591;
+  padding: 1rem;
+}
+
+header div.heading form input,
+header div.heading form select {
+  padding: 1rem 2rem;
+  margin-right: 0.5rem;
+  border-radius: 0.6rem;
+  border: none;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+header div.heading form input {
+  padding-right: 4rem;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 10px;
+    font-weight: 100;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    &:hover {
+        background-color: #000;
+        color: #fff;
+        border-radius: 10px;
+    }
+}
+.btn {
+    margin-right: 1rem;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.5rem 1.4rem;
+    cursor: pointer;
+}
+.btn-app {
+    color: #eb5a3f;
+    border: 1px solid #eb5a3f;
+
+    &:hover {
+        background-color: #eb5a3f;
+        color: #fff;
+    }
+}
+.btn-login {
+    color: #fff;
+    border: 1px solid #eb5a3f;
+    background-color: #eb5a3f;
+    &:hover {
+        background-color: #fff;
+        color: #eb5a3f;
+        border: 1px solid transparent;
+    }
+}
+.btn-search {
+    padding: 1rem 2rem;
+    margin-right: 0.5rem;
+    border-radius: 0.6rem;
+    border: none;
+    font-size: 1.2rem;
+    color: #fff;
+    border: 1px solid #8cdb42;
+    background-color: #8cdb42;
+    &:hover {
+        background-color: #649b30;
+        border-color: #649b30;
+    }
+}
+header {
+    width: 100vw;
+    height: 95vh;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #000000a8, #32333331),
+        url(../../../main-bg2.jpg) no-repeat bottom;
+    background-size: cover;
+    nav {
+        padding-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            font-size: 1.7rem;
+            margin: 0 3rem;
+        }
+    }
+    div.heading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        h1 {
+            font-size: 3rem;
+            font-weight: 200;
+            padding: 2rem auto;
+            text-transform: capitalize;
+            span {
+                text-transform: initial;
+            }
+        }
+        p {
+            margin: 1rem auto;
+            font-size: 1.1rem;
+            font-weight: 100;
+        }
+        form {
+            background-color: #24232591;
+            padding: 1rem;
+            input,
+            select {
+                padding: 1rem 2rem;
+                margin-right: 0.5rem;
+                border-radius: 0.6rem;
+                border: none;
+                font-size: 1.2rem;
+                color: gray;
+            }
+            input {
+                padding-right: 4rem;
+            }
+        }
+    }
+}

@@ -4,6 +4,45 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Harm Properties</title>
+        <link rel="stylesheet" href="vendors/styles/main.css" />
     </head>
-    <body></body>
+    <body>
+        <header>
+            <nav>
+                <div class="main-nav">
+                    <a href="#" class="logo">LOGO</a>
+                    <a href="#">Buy</a>
+                    <a href="#">Rent</a>
+                    <a href="#">Project</a>
+                    <a href="#">Find an Agent</a>
+                </div>
+                <div class="download-btn">
+                    <a href="#" class="btn btn-app">Download App</a>
+                    <a href="#" class="btn btn-login">Log In</a>
+                </div>
+            </nav>
+            <div class="heading">
+                <h1 class="main-heading">
+                    Find your ideal house, <span>by a click</span>
+                </h1>
+                <p class="secondary-heading">
+                    We help you in finding the best property match to your needs, with
+                    just few clicks.
+                </p>
+                <form action="get">
+                    <select name="options" id="options">
+                        <option value="sale">For Sale</option>
+                        <option value="rent">For Rent</option>
+                    </select>
+                    <input
+                        type="text"
+                        name="location"
+                        id="location"
+                        placeholder="Enter Location..."
+                    />
+                    <button type="submit" class="btn btn-search">Search</button>
+                </form>
+            </div>
+        </header>
+    </body>
 </html>
