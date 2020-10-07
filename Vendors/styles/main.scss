@@ -6,7 +6,7 @@
 body {
     font-size: 10px;
     font-weight: 100;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 a {
@@ -100,7 +100,7 @@ header {
             font-weight: 100;
         }
         form {
-            background-color: #24232591;
+            background-color: #00000091;
             padding: 1rem;
             input,
             select {
@@ -113,6 +113,55 @@ header {
             }
             input {
                 padding-right: 4rem;
+            }
+        }
+    }
+}
+section#info {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+        &:after {
+            content: ' ';
+            display: block;
+            width: 50%;
+            height: 0.3rem;
+            margin: 1rem auto;
+            background-color: #eb5a3f;
+        }
+    }
+
+    div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div.detail {
+            padding: 5rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 230px;
+                height: 200px;
+            }
+            h2 {
+                padding: 1.5rem 0;
+                font-size: 1.5rem;
+                font-weight: bolder;
+            }
+            p {
+                font-size: 1rem;
+                font-weight: 100;
             }
         }
     }

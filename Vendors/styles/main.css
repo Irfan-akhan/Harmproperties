@@ -8,7 +8,7 @@
 body {
   font-size: 10px;
   font-weight: 100;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -125,7 +125,7 @@ header div.heading p {
 }
 
 header div.heading form {
-  background-color: #24232591;
+  background-color: #00000091;
   padding: 1rem;
 }
 
@@ -141,5 +141,84 @@ header div.heading form select {
 
 header div.heading form input {
   padding-right: 4rem;
+}
+
+section#info {
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#info h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+section#info h1:after {
+  content: ' ';
+  display: block;
+  width: 50%;
+  height: 0.3rem;
+  margin: 1rem auto;
+  background-color: #eb5a3f;
+}
+
+section#info div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#info div div.detail {
+  padding: 5rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#info div div.detail img {
+  width: 230px;
+  height: 200px;
+}
+
+section#info div div.detail h2 {
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+section#info div div.detail p {
+  font-size: 1rem;
+  font-weight: 100;
 }
 /*# sourceMappingURL=main.css.map */
