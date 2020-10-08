@@ -1,6 +1,6 @@
 # Harmproperties is a Real Estate landing page
 Harmproperties is a landing page for a fictional Real Estate company for discovering properties for sale and rent. 
-### [Live Site]( https://irfan-akhan.github.io/wilderness/)
+### [Live Site](https://irfan-akhan.github.io/Harmproperties/)
 
 
 ## Getting Started
