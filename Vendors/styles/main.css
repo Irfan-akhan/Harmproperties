@@ -1145,11 +1145,154 @@ footer div#footer div#social-links img {
   header div#small-nav {
     display: none;
   }
+  header nav a {
+    margin: 0;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+  header nav a.logo {
+    font-size: 1rem;
+    margin: 0;
+  }
+  header nav .btn {
+    padding: 0.5rem 1rem;
+  }
+  header div.heading p {
+    font-size: 1.4rem;
+  }
+  header form input {
+    margin: 1rem 0;
+  }
+  section#info div {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section#info div div.detail {
+    padding: 1.5rem;
+  }
+  section#download {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.6rem;
+  }
+  section#download div img {
+    max-width: 300px;
+  }
+  section#download div p,
+  section#download div h1 {
+    padding: 0.5rem 4rem;
+  }
+  section#download div div.images img {
+    max-width: 20px;
+  }
+  section#featured {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#featured div.listing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section#featured div.listing div.house {
+    padding: 1rem;
+    min-width: 47%;
+  }
+  section#featured div.listing div.house h2 {
+    font-size: 1.2rem;
+  }
+  section#featured div.listing div.house h2 span {
+    font-size: inherit;
+  }
+  section#featured div.listing div.house a.btn {
+    text-align: center;
+    font-size: 1rem;
+  }
+  section#testimonials div#left h2 {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+  section#testimonials div#left p {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  footer {
+    padding: 3rem;
+  }
+  footer div#newsletter form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer div#footer div {
+    margin: 0.3rem;
+  }
+  footer div#footer div#social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer div#footer div#social-links img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   header div#small-nav {
     display: none;
+  }
+  header nav a {
+    padding: 1rem 1.6rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+  }
+  header nav .btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+  }
+  header form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section#how-it-works div.image img {
+    width: 350px;
+    height: 300px;
+  }
+  section#info div {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  section#info div div.detail {
+    padding: 1.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

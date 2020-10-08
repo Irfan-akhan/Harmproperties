@@ -869,6 +869,117 @@ footer {
         div#small-nav {
             display: none;
         }
+        nav {
+            a {
+                margin: 0;
+                font-size: 1rem;
+                padding: 0.5rem 1.5rem;
+            }
+            a.logo {
+                font-size: 1rem;
+                margin: 0;
+            }
+            .btn {
+                padding: 0.5rem 1rem;
+            }
+        }
+        div.heading {
+            p {
+                font-size: 1.4rem;
+            }
+        }
+        form {
+            input {
+                margin: 1rem 0;
+            }
+        }
+    }
+    section#info {
+        div {
+            flex-wrap: wrap;
+            div.detail {
+                padding: 1.5rem;
+            }
+        }
+    }
+    section#download {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.6rem;
+        div {
+            img {
+                max-width: 300px;
+            }
+            p,
+            h1 {
+                padding: 0.5rem 4rem;
+            }
+            div.images {
+                img {
+                    max-width: 20px;
+                }
+            }
+        }
+    }
+    section#featured {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        div.listing {
+            display: flex;
+            div.house {
+                padding: 1rem;
+                min-width: 47%;
+                h2 {
+                    font-size: 1.2rem;
+                    span {
+                        font-size: inherit;
+                    }
+                }
+                a.btn {
+                    text-align: center;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    section#testimonials {
+        div#left {
+            h2 {
+                font-size: 1.7rem;
+                text-transform: capitalize;
+                font-weight: 500;
+            }
+            p {
+                font-size: 1.4rem;
+                font-weight: 400;
+            }
+        }
+    }
+    footer {
+        padding: 3rem;
+        div#newsletter {
+            form {
+                display: flex;
+            }
+        }
+        div#footer {
+            div {
+                margin: 0.3rem;
+            }
+            div#social-links {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
     }
 }
 
@@ -876,6 +987,36 @@ footer {
     header {
         div#small-nav {
             display: none;
+        }
+        nav {
+            a {
+                padding: 1rem 1.6rem;
+                margin-right: 1rem;
+                font-size: 1.2rem;
+            }
+            .btn {
+                padding: 0.5rem 0.8rem;
+                font-size: 1rem;
+            }
+        }
+        form {
+            display: flex;
+        }
+    }
+    section#how-it-works {
+        div.image {
+            img {
+                width: 350px;
+                height: 300px;
+            }
+        }
+    }
+    section#info {
+        div {
+            flex-wrap: nowrap;
+            div.detail {
+                padding: 1.5rem;
+            }
         }
     }
 }
