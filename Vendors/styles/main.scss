@@ -102,7 +102,7 @@ header {
     height: 95vh;
     margin: 0 auto;
     background: linear-gradient(to bottom, #000000a8, #32333331),
-        url(../../../main-bg2.jpg) no-repeat bottom;
+        url(../../assets/imgs/main-bg2.jpg) no-repeat bottom;
     background-size: cover;
     div#small-nav {
         display: flex;
@@ -297,7 +297,7 @@ section#featured {
             padding: 2rem;
             width: 21%;
             background: linear-gradient(to top, rgba(34, 34, 34, 0.705), #0000000e),
-                url(../../../main-bg.png) no-repeat center;
+                url(../../assets/imgs/main-bg.png) no-repeat center;
             height: 450px;
             border-radius: 5px;
             margin: 2rem 1px;
@@ -313,7 +313,7 @@ section#featured {
 
             &:hover {
                 background: linear-gradient(to top, rgba(0, 0, 0, 0.637), #00000098),
-                    url(../../../main-bg.png) no-repeat center;
+                    url(../../assets/imgs/main-bg.png) no-repeat center;
             }
         }
     }
@@ -372,7 +372,7 @@ section#testimonials {
                 rgba(255, 255, 255, 0),
                 rgba(255, 255, 255, 0.89)
             ),
-            url(../../../testmonial-bg.jpg) no-repeat top center;
+            url(../../assets/imgs/testmonial-bg.jpg) no-repeat top center;
         background-size: cover;
         display: flex;
         flex-direction: column;
