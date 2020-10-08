@@ -25,6 +25,15 @@ a:hover {
   border-radius: 10px;
 }
 
+.small-logo {
+  padding: 2rem;
+  display: inline-block;
+}
+
+.small-logo:hover {
+  border: none;
+}
+
 .btn {
   margin-right: 1rem;
   border: none;
@@ -42,6 +51,20 @@ a:hover {
   background-color: #eb5a3f;
   color: #fff;
   border-bottom: 3px solid transparent;
+}
+
+.btn-details {
+  background-color: #31fa31ce;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1rem 1.8rem;
+}
+
+.btn-details:hover {
+  background-color: white;
+  color: #31fa31ce;
+  border: none;
 }
 
 .btn-explore {
@@ -85,6 +108,10 @@ a:hover {
   border-color: #649b30;
 }
 
+.hide {
+  display: none;
+}
+
 section {
   padding: 6rem;
 }
@@ -95,6 +122,40 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, from(#000000a8), to(#32333331)), url(../../../main-bg2.jpg) no-repeat bottom;
   background: linear-gradient(to bottom, #000000a8, #32333331), url(../../../main-bg2.jpg) no-repeat bottom;
   background-size: cover;
+}
+
+header div#small-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header div#small-nav div#hamburger {
+  margin: 2rem;
+}
+
+header div#small-nav div#hamburger span {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  background-color: #eb5a3f;
+  padding: 0.1rem;
+  width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header nav {
@@ -163,7 +224,7 @@ header div.heading form input {
 }
 
 section#info {
-  width: 85vw;
+  width: 100vw;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -610,5 +671,485 @@ footer div#footer div#social-links {
 
 footer div#footer div#social-links img {
   height: 50px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  header div.main-nav,
+  header div.download-btn {
+    display: none;
+  }
+  header div.heading {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -80%);
+            transform: translate(-50%, -80%);
+  }
+  header div.heading h1.main-heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  header div.heading p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0.5rem auto;
+  }
+  header div.heading form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.5rem;
+  }
+  header div.heading form input {
+    margin: 0.7rem auto;
+    width: 90%;
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+  header div.heading form select {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.9rem;
+  }
+  section#info {
+    padding: 2rem;
+    text-align: center;
+  }
+  section#info div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#info div div.detail {
+    padding: 0.6rem;
+    margin-bottom: 1.8rem;
+  }
+  section#info div div.detail img {
+    width: 180px;
+  }
+  section#info div div.detail h2 {
+    font-size: 1.2rem;
+  }
+  section#info div div.detail p {
+    font-size: 1rem;
+  }
+  section#how-it-works {
+    padding: 2rem;
+    text-align: center;
+  }
+  section#how-it-works div.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#how-it-works div.container div h1 {
+    font-size: 1.3rem;
+  }
+  section#how-it-works div.container div p {
+    font-size: 1.3rem;
+  }
+  section#how-it-works div.container:first-of-type img {
+    width: 300px;
+    height: 220px;
+  }
+  section#featured {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#featured div.listing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#featured div.listing div.house {
+    padding: 1rem;
+    min-width: 100%;
+  }
+  section#featured div.listing div.house h2 {
+    font-size: 1.2rem;
+  }
+  section#featured div.listing div.house h2 span {
+    font-size: inherit;
+  }
+  section#featured div.listing div.house a.btn {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  section#testimonials {
+    padding: 1rem;
+    text-align: center;
+  }
+  section#testimonials div#content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  section#testimonials div#content div#left {
+    max-width: 100%;
+    padding: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 10px;
+  }
+  section#testimonials div#content div#left h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  section#testimonials div#content div#left p {
+    font-size: 1.2rem;
+  }
+  section#testimonials div#content div#right {
+    max-width: 100%;
+    padding: 2rem;
+  }
+  section#testimonials div#content div#right div {
+    width: 100%;
+    padding: 0.6rem;
+  }
+  section#download {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.6rem;
+  }
+  section#download div img {
+    max-width: 300px;
+  }
+  section#download div div.images img {
+    max-width: 20px;
+  }
+  footer {
+    padding: 1rem;
+  }
+  footer div#newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  footer div#newsletter h2 {
+    font-size: 1rem;
+    min-width: 100%;
+  }
+  footer div#newsletter form {
+    margin-top: 1.3rem;
+  }
+  footer div#newsletter form input {
+    margin: 0;
+  }
+  footer div#newsletter form button {
+    margin-top: 1rem;
+  }
+  footer div#footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  footer div#footer div#social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer div#footer div#social-links img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  header div.main-nav,
+  header div.download-btn {
+    display: none;
+  }
+  header div.heading form input {
+    margin: 0.7rem auto;
+    width: 90%;
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+  header div.heading form select {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.9rem;
+  }
+  section#info div {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section#info div div.detail {
+    padding: 1.5rem;
+  }
+  section#featured {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#featured div.listing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section#featured div.listing div.house {
+    padding: 1rem;
+    min-width: 47%;
+  }
+  section#featured div.listing div.house h2 {
+    font-size: 1.2rem;
+  }
+  section#featured div.listing div.house h2 span {
+    font-size: inherit;
+  }
+  section#featured div.listing div.house a.btn {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  section#testimonials {
+    padding: 1rem;
+    text-align: center;
+  }
+  section#testimonials div#content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  section#testimonials div#content div#left {
+    max-width: 100%;
+    padding: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 10px;
+  }
+  section#testimonials div#content div#left h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  section#testimonials div#content div#left p {
+    font-size: 1.2rem;
+  }
+  section#testimonials div#content div#right {
+    max-width: 100%;
+    padding: 2rem;
+  }
+  section#testimonials div#content div#right div {
+    width: 100%;
+    padding: 0.6rem;
+  }
+  section#how-it-works {
+    padding: 2rem;
+    text-align: center;
+  }
+  section#how-it-works div.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#how-it-works div.container div h1 {
+    font-size: 0.7rem;
+  }
+  section#how-it-works div.container div p {
+    font-size: 1.4rem;
+  }
+  section#how-it-works div.container:first-of-type img {
+    width: 300px;
+    height: 220px;
+  }
+  section#download {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.6rem;
+  }
+  section#download div img {
+    max-width: 300px;
+  }
+  section#download div p,
+  section#download div h1 {
+    padding: 0.5rem 4rem;
+  }
+  section#download div div.images img {
+    max-width: 20px;
+  }
+  footer {
+    padding: 1rem;
+  }
+  footer div#newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  footer div#newsletter h2 {
+    font-size: 1rem;
+    min-width: 100%;
+  }
+  footer div#newsletter form {
+    margin-top: 1.3rem;
+  }
+  footer div#newsletter form input {
+    margin: 0;
+  }
+  footer div#newsletter form button {
+    margin-top: 1rem;
+  }
+  footer div#footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  footer div#footer div#social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer div#footer div#social-links img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  header div#small-nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header div#small-nav {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
