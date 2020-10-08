@@ -78,6 +78,12 @@ a {
         border: 1px solid transparent;
     }
 }
+.toggle-nav {
+    display: block;
+    a {
+        display: block;
+    }
+}
 .btn-search {
     padding: 1rem 2rem;
     margin-right: 0.5rem;

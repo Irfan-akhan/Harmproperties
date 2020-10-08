@@ -92,6 +92,14 @@ a:hover {
   border: 1px solid transparent;
 }
 
+.toggle-nav {
+  display: block;
+}
+
+.toggle-nav a {
+  display: block;
+}
+
 .btn-search {
   padding: 1rem 2rem;
   margin-right: 0.5rem;
