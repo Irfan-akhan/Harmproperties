@@ -282,6 +282,8 @@ section#featured {
 footer {
     background-color: rgb(243, 243, 243);
     padding: 6rem;
+    display: flex;
+    flex-direction: column;
     div#newsletter {
         display: flex;
         justify-content: center;
@@ -302,6 +304,26 @@ footer {
                 border: none;
                 margin: 0px 2rem;
                 font-size: 1.2rem;
+            }
+        }
+    }
+    div#footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        div {
+            margin: 2rem;
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            h3 {
+                font-size: 1.1rem;
+                font-weight: 300;
+                margin-top: 1rem;
+            }
+            img {
+                height: 50px;
             }
         }
     }
