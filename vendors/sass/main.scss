@@ -343,6 +343,11 @@ section#download {
         align-items: flex-start;
 
         &:first-of-type {
+            a {
+                &:hover {
+                    border: none;
+                }
+            }
             img {
                 width: 150px;
                 border-radius: 0.5rem;

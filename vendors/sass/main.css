@@ -476,6 +476,10 @@ section#download div {
           align-items: flex-start;
 }
 
+section#download div:first-of-type a:hover {
+  border: none;
+}
+
 section#download div:first-of-type img {
   width: 150px;
   border-radius: 0.5rem;
